@@ -1,0 +1,31 @@
+--
+-- VHDL Architecture ece411.genOpJSR.untitled
+--
+-- Created:
+--          by - tischer1.ews (gelib-057-03.ews.illinois.edu)
+--          at - 23:06:36 11/15/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY genOpJSR IS
+   PORT( 
+      opJSR : OUT    LC3b_opcode
+   );
+
+-- Declarations
+
+END genOpJSR ;
+
+--
+ARCHITECTURE untitled OF genOpJSR IS
+BEGIN
+  opJSR <= OP_JSR;
+END ARCHITECTURE untitled;
+

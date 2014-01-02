@@ -1,0 +1,67 @@
+--
+-- VHDL Architecture ece411.IR.untitled
+--
+-- Created:
+--          by - hcander2.ews (linux7.ews.illinois.edu)
+--          at - 01:43:19 09/05/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY IR IS
+   PORT( 
+      clk     : IN     std_logic;
+      LoadIR  : IN     std_logic;
+      MDRout  : IN     LC3b_word;
+      index6  : OUT    LC3b_index6;
+      vect8   : OUT    LC3b_trapvect8;
+      offset9 : OUT    LC3b_offset9;
+      SrcA    : OUT    LC3b_reg;
+      SrcB    : OUT    LC3b_reg;
+      Opcode  : OUT    LC3b_opcode;
+      imm4    : OUT    LC3b_imm4;
+      IR5     : OUT    std_logic;
+      IR11    : OUT    std_logic;
+      shftop  : OUT    LC3b_shftop;
+      Dest    : OUT    LC3b_reg;
+      imm5    : OUT    LC3b_imm5
+   );
+
+-- Declarations
+
+END IR ;
+
+--
+ARCHITECTURE untitled OF IR IS
+SIGNAL VAL_IR : LC3b_word;
+BEGIN
+  ------------------------------
+  VHDL_REG_IR : PROCESS (clk, LoadIR, MDRout)
+  ------------------------------
+  BEGIN
+    IF (CLK'EVENT AND (clk = '1') AND (CLK'LAST_VALUE = '0')) THEN
+      IF (LoadIR = '1') THEN
+        VAL_IR <= MDRout AFTER DELAY_REG;
+      END IF;
+    END IF;
+  END PROCESS VHDL_REG_IR;
+  Opcode <= VAL_IR(15 DOWNTO 12);
+  shftop <= VAL_IR(5 DOWNTO 4);
+  IR5 <= VAL_IR(5);
+  IR11 <= VAL_IR(11);
+  imm4 <= VAL_IR(3 DOWNTO 0);
+  imm5 <= VAL_IR(4 DOWNTO 0);
+  index6 <= VAL_IR(5 DOWNTO 0);
+  vect8 <= VAL_IR(7 DOWNTO 0);
+  offset9 <= VAL_IR(8 DOWNTO 0);
+  SrcA <= VAL_IR(8 DOWNTO 6);
+  SrcB <= VAL_IR(2 DOWNTO 0);
+  Dest <= VAL_IR(11 DOWNTO 9);
+END ARCHITECTURE untitled;
+

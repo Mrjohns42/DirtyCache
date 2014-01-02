@@ -1,0 +1,2 @@
+DEFAULT_FILE atom @indirect@sub/struct.bd
+DEFAULT_ARCHITECTURE atom struct

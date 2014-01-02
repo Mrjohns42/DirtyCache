@@ -1,0 +1,33 @@
+--
+-- VHDL Architecture ece411.IF_ID.untitled
+--
+-- Created:
+--          by - ece411.ece411 (localhost)
+--          at - 19:54:17 10/23/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY IF_ID IS
+  PORT( 
+    clk     : IN     std_logic;
+	  reset_l : IN     std_logic;
+	  en      : IN     std_logic;
+	  A       : IN     STD_LOGIC_VECTOR (15 DOWNTO 0);
+	  F       : OUT    STD_LOGIC_VECTOR (15 DOWNTO 0)
+  );
+-- Declarations
+
+END IF_ID ;
+
+--
+ARCHITECTURE untitled OF IF_ID IS
+BEGIN
+END ARCHITECTURE untitled;
+

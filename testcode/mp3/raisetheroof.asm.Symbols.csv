@@ -1,0 +1,11 @@
+__date__, Define
+__file__, Define
+__line__, Define
+__time__, Define
+__version_3__, Define
+__version__, Define
+codesegment, Label, 4x0, 4x0
+down, Label, 4x8, 4x8
+halt, Label, 4xC, 4xC
+jump, Label, 4xE, 4xE
+loop, Label, 4x6, 4x6

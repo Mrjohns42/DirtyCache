@@ -1,0 +1,9 @@
+ORIGIN 0
+SEGMENT CODE:
+
+	LEA R7, address
+	LDR R6, R7, 0
+loop:
+	BRnzp loop
+
+ADDRESS: DATA2 4x600D

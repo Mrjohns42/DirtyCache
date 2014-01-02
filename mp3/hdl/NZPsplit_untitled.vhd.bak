@@ -1,0 +1,34 @@
+--
+-- VHDL Architecture ece411.NZPsplit.untitled
+--
+-- Created:
+--          by - hcander2.ews (linux7.ews.illinois.edu)
+--          at - 01:56:44 09/05/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY NZPsplit IS
+   PORT( 
+      Dest   : IN     LC3b_reg;
+      clk    : IN     std_logic;
+      CheckN : OUT    std_logic;
+      CheckP : OUT    std_logic;
+      CheckZ : OUT    std_logic
+   );
+
+-- Declarations
+
+END NZPsplit ;
+
+--
+ARCHITECTURE untitled OF NZPsplit IS
+BEGIN
+END ARCHITECTURE untitled;
+

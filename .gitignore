@@ -1,0 +1,2 @@
+# Ignore filesystem caches
+*.cache.dat

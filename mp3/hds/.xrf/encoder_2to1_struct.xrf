@@ -1,0 +1,54 @@
+DESIGN encoder_2to1
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN encoder_2to1
+VIEW symbol.sb
+GRAPHIC 51,0 8 0 
+DESIGN encoder_2to1
+VIEW symbol.sb
+GRAPHIC 87,0 17 0 
+DESIGN encoder_2to1
+VIEW symbol.sb
+GRAPHIC 92,0 18 0 
+DESIGN encoder_2to1
+VIEW symbol.sb
+GRAPHIC 97,0 19 0 
+DESIGN encoder_2to1
+VIEW symbol.sb
+GRAPHIC 1,0 22 0 
+DESIGN encoder_2to1
+VIEW symbol.sb
+GRAPHIC 1,0 23 0 
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 26
+DESIGN encoder_2to1
+VIEW struct.bd
+GRAPHIC 41,0 35 0 
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 41
+DESIGN encoder_2to1
+VIEW struct.bd
+GRAPHIC 0,0 43 2 
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 48
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 49
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 50
+DESIGN encoder_2to1
+VIEW struct.bd
+GRAPHIC 130,0 53 0 
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 56
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 57
+DESIGN encoder_2to1
+VIEW struct.bd
+NO_GRAPHIC 60

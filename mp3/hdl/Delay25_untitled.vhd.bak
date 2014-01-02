@@ -1,0 +1,33 @@
+--
+-- VHDL Architecture ece411.Delay25.untitled
+--
+-- Created:
+--          by - ece411.ece411 (localhost)
+--          at - 02:39:35 09/28/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY Delay25 IS
+   PORT( 
+      clk     : IN    std_logic;
+      RWout   : IN    std_logic;
+      RWout_d : OUT   std_logic
+   );
+
+-- Declarations
+
+END Delay25 ;
+
+--
+ARCHITECTURE untitled OF Delay25 IS
+BEGIN
+  RWout_d <= RWout after 25ns;
+END ARCHITECTURE untitled;
+

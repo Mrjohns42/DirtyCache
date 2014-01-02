@@ -1,0 +1,32 @@
+--
+-- VHDL Architecture ece411.ADDRtoPMADDR.untitled
+--
+-- Created:
+--          by - ece411.ece411 (localhost)
+--          at - 17:11:31 09/21/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY ADDRtoPMADDR IS
+   PORT( 
+      ADDRESS   : IN     LC3b_word;
+      clk       : IN     std_logic;
+      pmaddress : OUT    LC3b_word
+   );
+
+-- Declarations
+
+END ADDRtoPMADDR ;
+
+--
+ARCHITECTURE untitled OF ADDRtoPMADDR IS
+BEGIN
+END ARCHITECTURE untitled;
+

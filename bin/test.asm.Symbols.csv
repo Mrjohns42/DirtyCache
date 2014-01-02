@@ -1,0 +1,60 @@
+__date__, Define
+__file__, Define
+__line__, Define
+__time__, Define
+__version_3__, Define
+__version__, Define
+codesegment, Label, 4x0, 4x0
+datasegment0, Label, 4xE, 4x0
+datasegment1, Label, 4x1E, 4x0
+datasegment10, Label, 4xAE, 4x0
+datasegment11, Label, 4xBE, 4x0
+datasegment12, Label, 4xCE, 4x0
+datasegment13, Label, 4xDE, 4x0
+datasegment14, Label, 4xEE, 4x0
+datasegment15, Label, 4xFE, 4x0
+datasegment16, Label, 4x10E, 4x0
+datasegment17, Label, 4x11E, 4x0
+datasegment18, Label, 4x12E, 4x0
+datasegment19, Label, 4x13E, 4x0
+datasegment2, Label, 4x2E, 4x0
+datasegment20, Label, 4x14E, 4x0
+datasegment21, Label, 4x17A, 4x0
+datasegment3, Label, 4x3E, 4x0
+datasegment4, Label, 4x4E, 4x0
+datasegment5, Label, 4x5E, 4x0
+datasegment6, Label, 4x6E, 4x0
+datasegment7, Label, 4x7E, 4x0
+datasegment8, Label, 4x8E, 4x0
+datasegment9, Label, 4x9E, 4x0
+finish, Label, 4x16A, 4x1C
+halt, Label, 4x178, 4x2A
+label0, Label, 4x0, 4x0
+label1, Label, 4x10, 4x2
+label10, Label, 4xA0, 4x2
+label11, Label, 4xB0, 4x2
+label12, Label, 4xC0, 4x2
+label13, Label, 4xD0, 4x2
+label14, Label, 4xE0, 4x2
+label15, Label, 4xF0, 4x2
+label16, Label, 4x100, 4x2
+label17, Label, 4x110, 4x2
+label18, Label, 4x120, 4x2
+label19, Label, 4x130, 4x2
+label2, Label, 4x20, 4x2
+label20, Label, 4x140, 4x2
+label21, Label, 4x150, 4x2
+label3, Label, 4x30, 4x2
+label4, Label, 4x40, 4x2
+label5, Label, 4x50, 4x2
+label6, Label, 4x60, 4x2
+label7, Label, 4x70, 4x2
+label8, Label, 4x80, 4x2
+label9, Label, 4x90, 4x2
+spotcheck1, Label, 4x17A, 4x0
+spotcheck2, Label, 4x17C, 4x2
+spotcheck3, Label, 4x17E, 4x4
+spotcheck4, Label, 4x180, 4x6
+spotcheck5, Label, 4x182, 4x8
+spotcheck6, Label, 4x184, 4xA
+spotcheck7, Label, 4x186, 4xC

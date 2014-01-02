@@ -1,0 +1,48 @@
+--
+-- VHDL Architecture ece411.RegCW.untitled
+--
+-- Created:
+--          by - ece411.ece411 (localhost)
+--          at - 03:21:27 10/26/12
+--
+-- using Mentor Graphics HDL Designer(TM) 2005.3 (Build 75)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY RegCW IS
+   PORT( 
+      RESET_L : IN     std_logic;
+      A       : IN     LC3b_ControlWord;
+      EN      : IN     std_logic;
+      CLK     : IN     std_logic;
+      F       : OUT    LC3b_ControlWord
+   );
+
+-- Declarations
+
+END RegCW ;
+
+--
+ARCHITECTURE untitled OF RegCW IS
+BEGIN
+  RegCW: PROCESS(CLK,RESET_L,A,EN)
+  VARIABLE state : LC3b_ControlWord;
+  BEGIN
+	  IF(RESET_L = '0') THEN
+		  --set default values
+      state <= NOP;
+	  ELSIF(CLK = '1' AND CLK'EVENT AND EN = '1') THEN -- HIGH ENABLE
+		  state := A;
+	  ELSIF(EN /= '0' AND EN /= '1' AND CLK = '1' AND CLK'EVENT) THEN
+		  --set default values
+      state := XOP;
+	  END IF;
+	  F <= STATE AFTER DELAY_REG;
+  END PROCESS RegCW;
+END ARCHITECTURE untitled;
+

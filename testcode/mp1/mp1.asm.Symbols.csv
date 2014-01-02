@@ -1,0 +1,16 @@
+__date__, Define
+__file__, Define
+__line__, Define
+__time__, Define
+__version_3__, Define
+__version__, Define
+codesegment, Label, 4x0, 4x0
+end_while1, Label, 4x1C, 4x1C
+end_while2, Label, 4x18, 4x18
+halt, Label, 4x1E, 4x1E
+neg_one, Label, 4x20, 4x20
+neg_two, Label, 4x22, 4x22
+num, Label, 4x26, 4x26
+result, Label, 4x24, 4x24
+while1, Label, 4xC, 4xC
+while2, Label, 4x12, 4x12
